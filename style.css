@@ -1,0 +1,82 @@
+html { 
+    box-sizing: border-box; 
+} 
+
+*, *:before, *:after { 
+    box-sizing: inherit; 
+}
+
+.site-header {
+    background: url(img/background.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.site-header__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    margin: 0 auto 1em;
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+.site-header__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.site-header__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin: 0 1em 1em;
+}
+
+.site-header__button {
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 8em;
+    height: 2em;
+    background-color: #ff6033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__link:link, .button__link:visited {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+.site-about-us {
+    background: url(img/about-us.jpg) no-repeat center top / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.site-about-us__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    padding: 0.5em 0 0.25em;
+    margin: 0 auto;
+}
+
+.site-about-us__description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #fff;   
+    width: 90%;
+    font-size: 0.75em;
+    margin: 0 auto 1em;
+}
+
+.site-about-us__image {
+    width: 60%;
+}
