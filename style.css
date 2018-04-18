@@ -6,6 +6,10 @@ html {
     box-sizing: inherit; 
 }
 
+body {
+    line-height: 1.5;
+}
+
 .site-header {
     background: url(img/background.jpg) no-repeat center top / cover;
     height: 100vh;
@@ -21,7 +25,7 @@ html {
 
 .site-header__title {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: 900;
     text-align: center;
     margin-bottom: 0.25em;
@@ -29,7 +33,7 @@ html {
 
 .site-header__description {
     font-family: 'Raleway', sans-serif;
-    font-size: 0.75em;
+    font-size: 0.9em;
     font-weight: 400;
     margin: 0 1em 1em;
 }
@@ -38,18 +42,19 @@ html {
     text-transform: uppercase;
     margin: 0 auto;
     width: 8em;
-    height: 2em;
+    height: 2.5em;
     background-color: #ff6033;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 5px 20px -5px;
 }
 
 .button__link:link, .button__link:visited {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
-    font-size: 0.75em;
+    font-size: 0.9em;
 }
 
 .site-about-us {
@@ -64,7 +69,7 @@ html {
     color: #fff;
     font-size: 3em;
     text-align: center;
-    padding: 0.5em 0 0.25em;
+    padding: 0em 0 0.25em;
     margin: 0 auto;
 }
 
@@ -73,10 +78,58 @@ html {
     font-weight: 300;
     color: #fff;   
     width: 90%;
-    font-size: 0.75em;
+    font-size: 0.9em;
     margin: 0 auto 1em;
 }
 
 .site-about-us__image {
-    width: 60%;
+    width: 7em;
+}
+
+.site-services {
+    background: url(img/services.png) no-repeat center top / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.site-services__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0em 0 0.25em;
+    margin: 0 auto;
+}
+
+.site-services__list {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    padding: 0;
+    text-shadow: 1px 2px 4px #C0C0C0;
+}
+
+.list__item {
+    height: 3.25em;
+    width: 14em;
+    background-color: #fff;                      
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px -5px;
+}
+
+.site-services__image {
+    width: 5em;
+}
+
+.list__text {
+    width: 80%;
+}
+
+.list__image {
+    width: 1.5em;
+    height: 1.5em;
 }
