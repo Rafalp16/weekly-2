@@ -59,7 +59,7 @@ body {
 
 .site-about-us {
     background: url(img/about-us.jpg) no-repeat center top / cover;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .site-services {
     background: url(img/services.png) no-repeat center top / cover;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 
@@ -129,7 +129,90 @@ body {
     width: 80%;
 }
 
-.list__image {
+.list__icon {
     width: 1.5em;
     height: 1.5em;
+}
+
+.site-gallery {
+    background: url(img/gallery.png) no-repeat center top / cover;
+    height: 100%;
+    text-align: center;
+}
+
+.site-gallery__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.site-gallery__description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #000;   
+    width: 90%;
+    font-size: 0.9em;
+    margin: 0 auto 1em;
+}
+
+.site-gallery__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.gallery__image {
+    width: 100%;
+}
+
+.item--big {
+    flex-basis: 95%;
+}
+
+.item--small {
+    flex-basis: 45%;
+}
+
+.site-gallery__button {
+    text-transform: uppercase;
+    margin: 0 auto 1em;
+    width: 8em;
+    height: 2.5em;
+    background-color: #5585a2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 20px -5px;
+}
+
+.site-subscribe {
+    background: url(img/subscribe.png) no-repeat center top / cover;
+    height: 100%;
+    text-align: center;
+}
+
+.site-subscribe__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.site-subscribe__description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #000;   
+    width: 60%;
+    font-size: 0.9em;
+    margin: 0 1em;
 }
