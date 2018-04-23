@@ -316,9 +316,89 @@ body {
     margin: 0 1em 1em;
 }
 
+.site-footer__contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.contact__heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__description {
+    font-family: 'Raleway', sans-serif;
+}
+
 .item__input {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
     padding: 0.75em;
     width: 80%;
     margin: 0.5em auto;
-    background-color: aqua;
+    background-color: #00c4c4;
+    opacity: 0.5;
+    border: 1px solid #009999;
+}
+
+.item__input:hover, .item__textarea:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.item__input:focus, .item__textarea:hover {
+    opacity: 1;
+}
+
+.item__input::placeholder, .item__textarea::placeholder {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.item__textarea {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.75em;
+    background-color: #00c4c4;
+    opacity: 0.5;
+    width: 80%;
+    margin: 0.5em auto;
+    border: 1px solid #009999;
+}
+
+.site-footer__copyright {
+    background-color: #000;
+    text-align: center;
+}
+
+.copyright__left {
+    color: #939393;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+}
+
+.copyright__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0 auto;
+    color: #fff;
+    display: block;
+}
+
+.copyright__description {
+    color: #939393;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+}
+
+.description--highlight {
+    color: #ff2b58;
+    font-weight: 700;
 }
