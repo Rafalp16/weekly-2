@@ -10,6 +10,11 @@ body {
     line-height: 1.5;
 }
 
+.site-container {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
 .site-header {
     background: url(img/background.jpg) no-repeat center top / cover;
     height: 100vh;
@@ -20,11 +25,9 @@ body {
     font-weight: 500;
     margin: 0 auto 1em;
     text-align: center;
-    padding: 0.25em 0;
 }
 
 .site-header__title {
-    font-family: 'Raleway', sans-serif;
     font-size: 2em;
     font-weight: 900;
     text-align: center;
@@ -32,28 +35,26 @@ body {
 }
 
 .site-header__description {
-    font-family: 'Raleway', sans-serif;
     font-size: 0.9em;
-    font-weight: 400;
     margin: 0 1em 1em;
 }
 
-.site-header__button {
+.button {
     text-transform: uppercase;
     margin: 0 auto;
     width: 8em;
     height: 2.5em;
-    background-color: #ff6033;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 20px -5px;
 }
 
-.site-header__button:hover, .site-header__button:active,
-.site-gallery__button:hover, .site-gallery__button:active,
-.site-subscribe__button:hover, .site-subscribe__button:active,
-.site-blog__button:hover, .site-blog__button:active {
+.button--orange {
+    background-color: #ff6033;
+}
+
+.button:hover, .button:active {
     cursor: pointer;
     box-shadow: 0px 7px 15px -5px;
 }
@@ -67,22 +68,17 @@ body {
 
 .site-about-us {
     background: url(img/about-us.jpg) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
 }
 
 .site-about-us__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     color: #fff;
     font-size: 3em;
-    text-align: center;
     padding: 0em 0 0.25em;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .site-about-us__description {
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: #fff;   
     width: 90%;
@@ -96,23 +92,18 @@ body {
 
 .site-services {
     background: url(img/services.png) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
+    font-weight: 700;
 }
 
 .site-services__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     color: #fff;
     font-size: 2.5em;
-    text-align: center;
     padding: 0em 0 0.25em;
     margin: 0 auto;
 }
 
 .site-services__list {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     list-style: none;
     padding: 0;
     text-shadow: 1px 2px 4px #C0C0C0;
@@ -144,23 +135,17 @@ body {
 
 .site-gallery {
     background: url(img/gallery.png) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .site-gallery__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #000;
     font-size: 2.5em;
-    text-align: center;
     margin: 0 auto;
 }
 
 .site-gallery__description {
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color: #000;   
     width: 90%;
     font-size: 0.9em;
     margin: 0 auto 1em;
@@ -176,7 +161,6 @@ body {
     justify-content: space-around;
 }
 
-
 .gallery__image {
     width: 100%;
 }
@@ -189,37 +173,23 @@ body {
     flex-basis: 45%;
 }
 
-.site-gallery__button {
-    text-transform: uppercase;
-    margin: 0 auto 1em;
-    width: 8em;
-    height: 2.5em;
+.button--blue {
     background-color: #5585a2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 5px 20px -5px;
 }
 
 .site-subscribe {
     background: url(img/subscribe.png) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .site-subscribe__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #000;
     font-size: 2em;
-    text-align: center;
     margin: 0 auto;
 }
 
 .site-subscribe__description {
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color: #000;   
     width: 70%;
     font-size: 0.9em;
     margin: 0 1em 1em;
@@ -229,39 +199,27 @@ body {
     width: 80%;
     height: 2.5em;
     border: 1px solid black;
-    padding: 1em;
+    padding: 1em 0.2em;
     margin-bottom: 1em;
 }
 
-.site-subscribe__button {
-    text-transform: uppercase;
-    margin: 0 auto 1em;
-    width: 8em;
-    height: 2.5em;
+.button--green {
     background-color: #96b92c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 5px 20px -5px;
 }
 
 .site-blog {
     background: url(img/blog.png) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .site-blog__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     color: #fff;
     font-size: 2em;
-    text-align: center;
     margin: 0 auto;
 }
 
 .site-blog__description {
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: #fff;
     font-size: 0.9em;
@@ -278,16 +236,8 @@ body {
     box-shadow: 0px 5px 20px -5px;
 }
 
-.site-blog__button {
-    text-transform: uppercase;
-    margin: 0 auto 1em;
-    width: 8em;
-    height: 2.5em;
+.button--red {
     background-color: #f72b3b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 5px 20px -5px;
 }
 
 .visuallyhidden {
@@ -303,23 +253,16 @@ body {
 
 .site-footer {
     background: url(img/contact.png) no-repeat center top / cover;
-    height: 100%;
     text-align: center;
 }
 
 .site-footer__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #000;
     font-size: 2em;
-    text-align: center;
     margin: 0 auto;
 }
 
 .site-footer__description {
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color: #000;
     font-size: 0.9em;
     margin: 0 1em 1em;
 }
@@ -333,18 +276,11 @@ body {
 }
 
 .contact__heading {
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.contact__description {
-    font-family: 'Raleway', sans-serif;
-}
-
 .item__input {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
     padding: 0.75em;
     width: 80%;
     margin: 0.5em auto;
@@ -358,42 +294,37 @@ body {
     opacity: 1;
 }
 
-.item__input:focus, .item__textarea:hover {
+.item__input:focus, .item__textarea:focus {
     opacity: 1;
 }
 
 .item__input::placeholder, .item__textarea::placeholder {
     color: #fff;
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 0.75em;
 }
 
 .item__textarea {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
     padding: 0.75em;
     background-color: #00c4c4;
     opacity: 0.5;
     width: 80%;
     margin: 0.5em auto;
     border: 1px solid #009999;
+    min-height: 5em;
+    resize: vertical;
 }
 
 .site-footer__copyright {
     background-color: #000;
-    text-align: center;
 }
 
 .copyright__left {
     color: #939393;
-    font-family: 'Raleway', sans-serif;
-    display: block;
 }
 
 .copyright__logo {
     font-family: 'Pacifico', cursive;
-    font-weight: 500;
     font-size: 2em;
     margin: 0 auto;
     color: #fff;
@@ -402,8 +333,6 @@ body {
 
 .copyright__description {
     color: #939393;
-    font-family: 'Raleway', sans-serif;
-    display: block;
 }
 
 .description--highlight {
