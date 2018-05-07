@@ -252,10 +252,13 @@ h2 {
 }
 
 .blog-post__title {
+    display: inline-block;
     font-weight: 700;
     font-size: 1.35em;
     text-align: left;
     margin: 5.5em 1em 0;
+    text-decoration: none;
+    color: #fff;
 }
 
 .blog-post__author {
