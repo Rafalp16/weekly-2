@@ -23,6 +23,19 @@ h2 {
     max-width: 37.5em;
 }
 
+.section__header {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.header--bold {
+    font-weight: 800;
+}
+
+.header--white {
+    color: #fff;
+}
+
 .home {
     background: url(img/background.jpg) no-repeat center top / cover;
     height: 100vh;
@@ -46,13 +59,6 @@ h2 {
     font-weight: 500;
     text-align: center;
     margin-top: -0.5em;
-}
-
-.home__title {
-    font-size: 2em;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 0.25em;
 }
 
 .button {
@@ -96,11 +102,6 @@ h2 {
     color: #fff;
 }
 
-.about-us__title {
-    font-size: 3em;
-    margin: 0;
-}
-
 .about-us__description {
     font-weight: 300;
 }
@@ -113,12 +114,6 @@ h2 {
     background: #70bfff;
     text-align: center;
     font-weight: 700;
-}
-
-.services__title {
-    color: #fff;
-    font-size: 2.5em;
-    margin: 0;
 }
 
 .services__list {
@@ -155,10 +150,6 @@ h2 {
     text-align: center;
 }
 
-.gallery__title {
-    font-size: 2.5em;
-}
-
 .gallery__description {
     font-weight: 300;
 }
@@ -188,10 +179,6 @@ h2 {
     text-align: center;
 }
 
-.subscribe__title {
-    font-size: 2em;
-}
-
 .subscribe__description {
     font-weight: 300;
     width: 70%;
@@ -216,21 +203,64 @@ h2 {
     color: #fff;
 }
 
-.blog__title {
-    font-size: 2em;
-}
-
 .blog__description {
     font-weight: 300;
 }
 
 .blog__blog-post {
-    margin: 1em 0;
+    margin: 1em auto;
+    max-width: 370px;
+    width: 100%;
+    height: 100%;
+    min-height: 307px;
+    box-shadow: inset 0 -125px 70px -20px rgba(0, 0, 0, 0.65), 0px 5px 20px -5px #000;
 }
 
-.blog-post__image {
-    width: 100%;
-    box-shadow: 0px 5px 20px -5px #000;
+.post--first {
+    background: url("img/blog-post-1.png");
+}
+
+.post--second {
+    background: url("img/blog-post-2.png");
+}
+
+.post--third {
+    background: url("img/blog-post-3.png");
+}
+
+.blog-post__date {
+    position: relative;
+    left: 1em;
+    top: 1em;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 2.75em;
+    height: 2.75em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-post__day {
+    margin: 0;
+}
+
+.blog-post__month {
+    margin: -5px 0 0;
+}
+
+.blog-post__title {
+    font-weight: 700;
+    font-size: 1.35em;
+    text-align: left;
+    margin: 5.5em 1em 0;
+}
+
+.blog-post__author {
+    margin: 1em 1em;
+    text-align: left;
 }
 
 .visuallyhidden {
@@ -247,10 +277,6 @@ h2 {
 .contact {
     background: url(img/contact.png) no-repeat center top / cover;
     text-align: center;
-}
-
-.contact__title {
-    font-size: 2em;
 }
 
 .contact__description {
