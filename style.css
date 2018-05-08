@@ -107,7 +107,12 @@ h2 {
 }
 
 .about-us__image {
+    display: block;
     width: 7em;
+    height: 7em;
+    margin: 0 auto;
+    background: url("img/about-us-img.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
 .services {
@@ -133,7 +138,12 @@ h2 {
 }
 
 .services__image {
+    display: block;
     width: 7em;
+    height: 7em;
+    margin: 0 auto;
+    background: url("img/services-2.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
 .list__text {
