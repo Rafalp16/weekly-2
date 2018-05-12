@@ -75,7 +75,7 @@
             </div>
         </section>
         <section class="subscribe">
-            <div class="section-box">
+            <div class="section-box subscribe-box">
                 <h2 class="section__header">Subscribe To Us</h2>
                 <p class="subscribe__description">
                 Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -93,37 +93,38 @@
                 <h2 class="section__header">Blog</h2>
                 <p class="blog__description">
                 Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                <a href="#" class="blog-link">
-                    <div class="blog__blog-post" style="background: url(img/blog-post-1.png)">
-                        <div class="blog-post__date">
-                            20<br>NOV
+                <div class="blog-box">
+                    <a href="#" class="blog-link">
+                        <div class="blog__blog-post" style="background: url(img/blog-post-1.png)">
+                            <div class="blog-post__date">
+                                20<br>NOV
+                            </div>
+                            <p class="blog-post__title">Green Smoothies: Too Much of Good Thing?</p>
+                            <p class="blog-post__author">By Rafonix - 2 hours ago</p>
                         </div>
-                        <p class="blog-post__title">Green Smoothies: Too Much of Good Thing?</p>
-                        <p class="blog-post__author">By Rafonix - 2 hours ago</p>
-                    </div>
-                </a>
-                
-                <a href="#" class="blog-link">
-                    <div class="blog__blog-post" style="background: url(img/blog-post-2.png)">
-                        <div class="blog-post__date">
-                            14<br>NOV
+                    </a>
+
+                    <a href="#" class="blog-link">
+                        <div class="blog__blog-post" style="background: url(img/blog-post-2.png)">
+                            <div class="blog-post__date">
+                                14<br>NOV
+                            </div>
+                            <p class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</p>
+                            <p class="blog-post__author">By Rafonix - 3 hours ago</p>
                         </div>
-                        <p class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</p>
-                        <p class="blog-post__author">By Rafonix - 3 hours ago</p>
-                    </div>
-                </a>
-                
-                <a href="#" class="blog-link">
-                    <div class="blog__blog-post" style="background: url(img/blog-post-3.png)">
-                        <div class="blog-post__date">
-                            10<br>NOV
+                    </a>
+
+                    <a href="#" class="blog-link">
+                        <div class="blog__blog-post" style="background: url(img/blog-post-3.png)">
+                            <div class="blog-post__date">
+                                10<br>NOV
+                            </div>
+                            <p class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</p>
+                            <p class="blog-post__author">By Rafonix - 6 hours ago</p>
                         </div>
-                        <p class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</p>
-                        <p class="blog-post__author">By Rafonix - 6 hours ago</p>
-                    </div>
-                </a>
-                
-                <a href="#" class="button button--red">View more</a>
+                    </a>
+                </div>
+                <a href="#" class="button button--blog button--red">View more</a>
             </div>
         </section>
         <section class="contact">
@@ -131,32 +132,34 @@
                 <h2 class="section__header">Contact</h2>
                 <p class="contact__description">
                 For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
-                <div class="contact__details">
-                    <span class="details__heading">Address</span>
-                    <span>123 City name, Street, City, Country</span>
-                    <span class="details__heading">Email</span>
-                    <span>cahee@domain.com</span>
-                    <span class="details__heading">Phone</span>
-                    <span>+012&nbsp;345&nbsp;6789</span>
+                <div class="contact-box">
+                    <div class="contact__details">
+                        <span class="details__heading">Address</span>
+                        <span>123 City name, Street, City, Country</span>
+                        <span class="details__heading">Email</span>
+                        <span>cahee@domain.com</span>
+                        <span class="details__heading">Phone</span>
+                        <span>+012&nbsp;345&nbsp;6789</span>
+                    </div>
+                    <form name="contact-form" class="contact__form">
+                        <label for="name" class="visuallyhidden">
+                            your name
+                        </label>
+                        <input required id="name" type="text" placeholder="Your name" class="contact__input">
+                        <label for="email" class="visuallyhidden">
+                            your email
+                        </label>
+                        <input required id="email" type="email" placeholder="Your email" class="contact__input">
+                        <label for="phone" class="visuallyhidden">
+                            your phone number
+                        </label>
+                        <input required id="phone" type="tel" placeholder="Your phone number" class="contact__input">
+                        <label for="message" class="visuallyhidden">
+                            your message
+                        </label>
+                        <textarea class="contact__textarea" id="message" placeholder="Your message..." rows="6"></textarea>
+                    </form>
                 </div>
-                <form name="contact-form">
-                    <label for="name" class="visuallyhidden">
-                        your name
-                    </label>
-                    <input required id="name" type="text" placeholder="Your name" class="contact__input">
-                    <label for="email" class="visuallyhidden">
-                        your email
-                    </label>
-                    <input required id="email" type="email" placeholder="Your email" class="contact__input">
-                    <label for="phone" class="visuallyhidden">
-                        your phone number
-                    </label>
-                    <input required id="phone" type="tel" placeholder="Your phone number" class="contact__input">
-                    <label for="message" class="visuallyhidden">
-                        your message
-                    </label>
-                    <textarea class="contact__textarea" id="message" placeholder="Your message..." rows="6"></textarea>
-                </form>
             </div>
         </section>
         <footer class="footer">
