@@ -14,31 +14,42 @@
     <body>
         <section class="home">
             <div class="section-box">
-                <header>
+                <header class="home__header">
                     <h1 class="home__logo">Cakee</h1>
+                    <button class="home__hamburger">
+                    </button>
                     <nav class="home__nav">
-                        <div class="hamburger"></div>
-                        <div class="hamburger"></div>
-                        <div class="hamburger"></div>
+                        <ul class="nav__list">
+                            <li class="nav__item item--highlight"><a href="#" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        </ul>
                     </nav>
                 </header>
-                <h2 class="section__header header--bold">Fresh Life</h2>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                <a href="#" class="button button--orange">Get free now</a>
+                <main class="home__main">
+                    <h2 class="section__header header--bold">Fresh Life</h2>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="button button--home button--orange">Get free now</a>
+                </main>
             </div>
         </section>
         <section class="about-us">
-            <div class="section-box">
-                <h2 class="section__header">About Us</h2>
-                <p class="about-us__description">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <p class="about-us__description">
-                Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            <div class="section-box about-us-box">
+                <div>
+                    <h2 class="section__header">About Us</h2>
+                    <p class="about-us__description">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    <p class="about-us__description">
+                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
                 <span class="about-us__image"></span>
             </div>
         </section>
         <section class="services">
-            <div class="section-box">
-                <h2 class="section__header header--white">Our Services</h2>
+            <div class="section-box services-box">
+                <h2 class="section__header header--white services--title">Our Services</h2>
                 <ul class="services__list">
                     <li class="services__item"><span class="list__text">Online Shopping</span><img src="img/services-icon-1.png" class="list__icon" alt=""></li>
                     <li class="services__item"><span class="list__text">Quality Product</span><img src="img/services-icon-2.png" class="list__icon" alt=""></li>
@@ -82,32 +93,36 @@
                 <h2 class="section__header">Blog</h2>
                 <p class="blog__description">
                 Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                <div class="blog__blog-post post--first">
-                    <div class="blog-post__date">
-                        <p class="blog-post__day">20</p>
-                        <p class="blog-post__month">NOV</p>
+                <a href="#" class="blog-link">
+                    <div class="blog__blog-post" style="background: url(img/blog-post-1.png)">
+                        <div class="blog-post__date">
+                            20<br>NOV
+                        </div>
+                        <p class="blog-post__title">Green Smoothies: Too Much of Good Thing?</p>
+                        <p class="blog-post__author">By Rafonix - 2 hours ago</p>
                     </div>
-                    <a class="blog-post__title" href="#">Green Smoothies: Too Much of a Good Thing?</a>
-                    <p class="blog-post__author">By Rafonix - 2 hours ago</p>
-                </div>
+                </a>
                 
-                <div class="blog__blog-post post--second">
-                    <div class="blog-post__date">
-                        <p class="blog-post__day">14</p>
-                        <p class="blog-post__month">NOV</p>
+                <a href="#" class="blog-link">
+                    <div class="blog__blog-post" style="background: url(img/blog-post-2.png)">
+                        <div class="blog-post__date">
+                            14<br>NOV
+                        </div>
+                        <p class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</p>
+                        <p class="blog-post__author">By Rafonix - 3 hours ago</p>
                     </div>
-                    <a class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</a>
-                    <p class="blog-post__author">By Rafonix - 3 hours ago</p>
-                </div>
+                </a>
                 
-                <div class="blog__blog-post post--third">
-                    <div class="blog-post__date">
-                        <p class="blog-post__day">10</p>
-                        <p class="blog-post__month">NOV</p>
+                <a href="#" class="blog-link">
+                    <div class="blog__blog-post" style="background: url(img/blog-post-3.png)">
+                        <div class="blog-post__date">
+                            10<br>NOV
+                        </div>
+                        <p class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</p>
+                        <p class="blog-post__author">By Rafonix - 6 hours ago</p>
                     </div>
-                    <a class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</a>
-                    <p class="blog-post__author">By Rafonix - 6 hours ago</p>
-                </div>
+                </a>
+                
                 <a href="#" class="button button--red">View more</a>
             </div>
         </section>
@@ -125,20 +140,20 @@
                     <span>+012&nbsp;345&nbsp;6789</span>
                 </div>
                 <form name="contact-form">
-                    <label for="name">
-                        <span class="visuallyhidden">your name</span>
+                    <label for="name" class="visuallyhidden">
+                        your name
                     </label>
                     <input required id="name" type="text" placeholder="Your name" class="contact__input">
-                    <label for="email">
-                        <span class="visuallyhidden">your email</span>
+                    <label for="email" class="visuallyhidden">
+                        your email
                     </label>
                     <input required id="email" type="email" placeholder="Your email" class="contact__input">
-                    <label for="phone">
-                        <span class="visuallyhidden">your phone number</span>
+                    <label for="phone" class="visuallyhidden">
+                        your phone number
                     </label>
-                    <input required id="phone" type="number" placeholder="Your phone number" class="contact__input">
-                    <label for="message">
-                        <span class="visuallyhidden">your message</span>
+                    <input required id="phone" type="tel" placeholder="Your phone number" class="contact__input">
+                    <label for="message" class="visuallyhidden">
+                        your message
                     </label>
                     <textarea class="contact__textarea" id="message" placeholder="Your message..." rows="6"></textarea>
                 </form>
