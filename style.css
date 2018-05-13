@@ -35,13 +35,6 @@ h2 {
     text-align: center;
 }
 
-
-@media (min-width: 56.25em) {
-    .home__header {
-    }
-}
-
-
 .header--bold {
     font-weight: 800;
 }
@@ -62,11 +55,24 @@ h2 {
     }
 }
 
+@media (min-width: 56.25em) {
+    .nav-shadow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 10em;
+        box-shadow: inset -20px 121px 155px -52px rgba(255,255,255,1);
+    }
+}
+
 .home__logo {
     font-family: 'Pacifico', cursive;
     font-weight: 500;
     text-align: center;
     margin-top: -0.5em;
+    z-index: 1;
 }
 
 @media (min-width: 56.26em) {
@@ -76,14 +82,14 @@ h2 {
 }
 
 .home__hamburger {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        cursor: pointer;
-        border: none;
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMzJweCIgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNCwxMGgyNGMxLjEwNCwwLDItMC44OTYsMi0ycy0wLjg5Ni0yLTItMkg0QzIuODk2LDYsMiw2Ljg5NiwyLDhTMi44OTYsMTAsNCwxMHogTTI4LDE0SDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDIgIHMwLjg5NiwyLDIsMmgyNGMxLjEwNCwwLDItMC44OTYsMi0yUzI5LjEwNCwxNCwyOCwxNHogTTI4LDIySDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDJzMC44OTYsMiwyLDJoMjRjMS4xMDQsMCwyLTAuODk2LDItMiAgUzI5LjEwNCwyMiwyOCwyMnoiLz48L3N2Zz4=);
-        height: 2em;
-        width: 2em;
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+    cursor: pointer;
+    border: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMzJweCIgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNCwxMGgyNGMxLjEwNCwwLDItMC44OTYsMi0ycy0wLjg5Ni0yLTItMkg0QzIuODk2LDYsMiw2Ljg5NiwyLDhTMi44OTYsMTAsNCwxMHogTTI4LDE0SDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDIgIHMwLjg5NiwyLDIsMmgyNGMxLjEwNCwwLDItMC44OTYsMi0yUzI5LjEwNCwxNCwyOCwxNHogTTI4LDIySDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDJzMC44OTYsMiwyLDJoMjRjMS4xMDQsMCwyLTAuODk2LDItMiAgUzI5LjEwNCwyMiwyOCwyMnoiLz48L3N2Zz4=);
+    height: 2em;
+    width: 2em;
 }
 
 @media (min-width: 56.25em) {
@@ -101,6 +107,8 @@ h2 {
 @media (min-width: 56.25em) {
     .home__nav {
         text-transform: uppercase;
+        position: fixed;
+        right: 4em;
     }
 }
 
@@ -330,10 +338,15 @@ h2 {
 }
 
 .subscribe {
-    background: url(img/subscribe.png) no-repeat center top / cover;
     text-align: center;
 }
 
+@media (min-width: 56.25em) {
+    .subscribe {
+        background: url(img/subscribe.png) no-repeat center top / cover;
+    }
+}
+        
 @media (min-width: 56.25em) {
     .subscribe-box {
         display: flex;
@@ -347,11 +360,13 @@ h2 {
 .subscribe__description {
     font-weight: 300;
     width: 70%;
+    margin: 0 auto 1em;
 }
 
 @media (min-width: 56.25em) {
     .subscribe__description {
         text-align: left;
+        margin: 1em 0;
     }
 }
 
@@ -366,6 +381,15 @@ h2 {
 @media (min-width: 56.25em) {
     .subscribe__input {
         width: 250%;
+    }
+}
+
+@media (min-width: 56.25em) {    
+    .button-subscribe {
+        position: relative;
+        top: -4.0625em;
+        left: 30.625em;
+        height: 3em;
     }
 }
 
@@ -430,6 +454,10 @@ h2 {
 
 .blog-link {
     text-decoration: none;
+}
+
+.blog__blog-post:hover, .blog__blog-post:focus {
+    box-shadow: inset 0 -185px 100px -50px rgba(0, 0, 0, 0.45), 0px 5px 20px -5px #000;
 }
 
 .blog-post__title {
@@ -552,7 +580,7 @@ h2 {
 }
 
 .footer {
-    background-color: #000;
+    background-color: #262626;
     text-align: center;
 }
 
@@ -566,18 +594,18 @@ h2 {
 }
 
 .footer__copyright {
-    color: #939393;
+    color: #9b9b9b;
 }
 
 .footer__logo {
     font-family: 'Pacifico', cursive;
     font-size: 2em;
-    color: #fff;
+    color: #b9b9b9;
     display: block;
 }
 
 .footer__description {
-    color: #939393;
+    color: #a3a3a3;
 }
 
 .description--highlight {

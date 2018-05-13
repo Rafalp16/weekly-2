@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900" rel="stylesheet"> 
     </head>
     <body>
-        <section class="home">
+        <section class="home" id="home">
             <div class="section-box">
                 <header class="home__header">
                     <h1 class="home__logo">Cakee</h1>
@@ -20,13 +20,14 @@
                     </button>
                     <nav class="home__nav">
                         <ul class="nav__list">
-                            <li class="nav__item item--highlight"><a href="#" class="nav__link">Home</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                            <li class="nav__item item--highlight"><a href="#home" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                         </ul>
+                        <div class="nav-shadow"></div>
                     </nav>
                 </header>
                 <main class="home__main">
@@ -36,7 +37,7 @@
                 </main>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="section-box about-us-box">
                 <div>
                     <h2 class="section__header">About Us</h2>
@@ -47,7 +48,7 @@
                 <span class="about-us__image"></span>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="section-box services-box">
                 <h2 class="section__header header--white services--title">Our Services</h2>
                 <ul class="services__list">
@@ -59,7 +60,7 @@
                 <span class="services__image"></span>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="section-box">
                 <h2 class="section__header">Gallery</h2>
                 <p class="gallery__description">
@@ -74,7 +75,7 @@
                 <a href="#" class="button button--blue">View more</a>
             </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
             <div class="section-box subscribe-box">
                 <h2 class="section__header">Subscribe To Us</h2>
                 <p class="subscribe__description">
@@ -84,11 +85,11 @@
                         <span class="visuallyhidden">your email address</span>
                     </label>
                     <input id="subscribe" type="email" placeholder="Your email address..." class="subscribe__input">
+                    <a href="#" class="button button--green button-subscribe">Subscribe</a>
                 </form>
-                <a href="#" class="button button--green">Subscribe</a>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="section-box">
                 <h2 class="section__header">Blog</h2>
                 <p class="blog__description">
@@ -99,7 +100,7 @@
                             <div class="blog-post__date">
                                 20<br>NOV
                             </div>
-                            <p class="blog-post__title">Green Smoothies: Too Much of Good Thing?</p>
+                            <header class="blog-post__title">Green Smoothies: Too Much of Good Thing?</header>
                             <p class="blog-post__author">By Rafonix - 2 hours ago</p>
                         </div>
                     </a>
@@ -109,7 +110,7 @@
                             <div class="blog-post__date">
                                 14<br>NOV
                             </div>
-                            <p class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</p>
+                            <header class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</header>
                             <p class="blog-post__author">By Rafonix - 3 hours ago</p>
                         </div>
                     </a>
@@ -119,7 +120,7 @@
                             <div class="blog-post__date">
                                 10<br>NOV
                             </div>
-                            <p class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</p>
+                            <header class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</header>
                             <p class="blog-post__author">By Rafonix - 6 hours ago</p>
                         </div>
                     </a>
@@ -127,7 +128,7 @@
                 <a href="#" class="button button--blog button--red">View more</a>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="section-box">
                 <h2 class="section__header">Contact</h2>
                 <p class="contact__description">
