@@ -204,6 +204,13 @@ h2 {
     color: #fff;
 }
 
+@media (min-width: 56.25em) {
+    .about-header {
+        text-align: left;
+        font-size: 3.25em;
+    }
+}
+
 .about-us__description {
     font-weight: 300;
 }
@@ -232,6 +239,7 @@ h2 {
     .about-us__image {
         width: 30em;
         height: 30em;
+        margin: 0 4em 0 0;
     }
 }
 
@@ -257,8 +265,8 @@ h2 {
 }
 
 .services__item {
-    height: 3.25em;
-    width: 14em;
+    height: 4.25em;
+    width: 18em;
     background-color: #fff;                      
     margin: 1em auto;
     display: flex;
@@ -293,12 +301,18 @@ h2 {
 }
 
 .list__text {
-    width: 80%;
+    width: 70%;
+    margin-right: 1em;
+    border-right: 1px solid #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list__icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
 }
 
 .gallery {
@@ -353,7 +367,7 @@ h2 {
         flex-direction: column;
         text-align: left;
         align-items: flex-start;
-        max-width: 40em;
+        max-width: 70em;
     }
 }
 
@@ -380,7 +394,7 @@ h2 {
 
 @media (min-width: 56.25em) {
     .subscribe__input {
-        width: 250%;
+        width: 320%;
     }
 }
 
@@ -388,7 +402,7 @@ h2 {
     .button-subscribe {
         position: relative;
         top: -4.0625em;
-        left: 30.625em;
+        left: 38.625em;
         height: 3em;
     }
 }
@@ -495,6 +509,10 @@ h2 {
     text-align: center;
 }
 
+.contact-header {
+    color: #262626;
+}
+
 .contact__description {
     font-weight: 300;
 }
@@ -555,10 +573,12 @@ h2 {
 .contact__input:hover, .contact__textarea:hover {
     cursor: pointer;
     opacity: 1;
+    border-left: 5px solid #355b82;
 }
 
 .contact__input:focus, .contact__textarea:focus {
     opacity: 1;
+    border-left: 5px solid #355b82;
 }
 
 .contact__input::placeholder, .contact__textarea::placeholder {
