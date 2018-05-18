@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
@@ -9,14 +9,15 @@
         <title>WebDev #2</title>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css"> 
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Pacifico%7CRaleway:300,400,700,900" rel="stylesheet"> 
     </head>
     <body>
-        <section class="home" id="home">
+        <main class="home" id="home">
             <div class="section-box">
                 <header class="home__header">
                     <h1 class="home__logo">Cakee</h1>
                     <button class="home__hamburger" id="nav">
+                        <span class="visuallyhidden">menu icon</span>
                     </button>
                     <nav class="home__nav" id="home__nav">
                         <ul class="nav__list">
@@ -30,13 +31,13 @@
                         <div class="nav-shadow"></div>
                     </nav>
                 </header>
-                <main class="home__main">
+                <section class="home__main">
                     <h2 class="section__header header--bold">Fresh Life</h2>
                     <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     <a href="#" class="button button--home button--orange">Get free now</a>
-                </main>
+                </section>
             </div>
-        </section>
+        </main>
         <section class="about-us" id="about">
             <div class="section-box about-us-box">
                 <div>
@@ -80,11 +81,11 @@
                 <p class="subscribe__description">
                 Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <form name="subscribe-form">
-                    <label for="subscribe" class="item__label">
+                    <label for="email-input" class="item__label">
                         <span class="visuallyhidden">your email address</span>
                     </label>
-                    <input id="subscribe" type="email" placeholder="Your email address..." class="subscribe__input">
-                    <a href="#" class="button button--green button-subscribe">Subscribe</a>
+                    <input id="email-input" type="email" placeholder="Your email address..." class="subscribe__input">
+                    <input type="submit" class="button button--green button-subscribe" value="subscribe">
                 </form>
             </div>
         </section>
@@ -109,7 +110,7 @@
                             <div class="blog-post__date">
                                 14<br>NOV
                             </div>
-                            <header class="blog-post__title" href="#">Growing Food and a "Thirst" for Innovation</header>
+                            <header class="blog-post__title">Growing Food and a "Thirst" for Innovation</header>
                             <p class="blog-post__author">By Rafonix - 3 hours ago</p>
                         </div>
                     </a>
@@ -119,7 +120,7 @@
                             <div class="blog-post__date">
                                 10<br>NOV
                             </div>
-                            <header class="blog-post__title" href="#">Pesticides &amp; Food: What You Need to Know</header>
+                            <header class="blog-post__title">Pesticides &amp; Food: What You Need to Know</header>
                             <p class="blog-post__author">By Rafonix - 6 hours ago</p>
                         </div>
                     </a>
