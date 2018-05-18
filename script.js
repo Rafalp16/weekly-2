@@ -1,8 +1,11 @@
-document.getElementById("nav").addEventListener("click", function(){
-    document.body.classList.remove("site-nav-close");
+const menuToggler = document.getElementById("nav-toggler");
+const navLinks = document.querySelectorAll(".nav__link");
+
+function menuToggle () {
     document.body.classList.toggle("site-nav-open");
-});
-document.getElementById("home__nav").addEventListener("click", function(){
-    document.body.classList.remove("site-nav-open");
-    document.body.classList.toggle("site-nav-close");
+}
+
+menuToggler.addEventListener("click", menuToggle);
+navLinks.forEach(function(navLink) {
+    navLink.addEventListener("click", menuToggle);
 });

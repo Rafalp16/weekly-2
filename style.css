@@ -78,11 +78,12 @@ h2 {
 @media (min-width: 56.26em) {
     .home__logo {
         margin-top: 0;
+        position: fixed;
     }
 }
 
 .home__hamburger {
-    position: absolute;
+    position: fixed;
     top: 12.5px;
     right: 12.5px;
     cursor: pointer;
@@ -102,7 +103,6 @@ h2 {
     .home__nav {
         position: fixed;
         text-transform: uppercase;
-        display: none;
     }
 }
 
@@ -115,7 +115,7 @@ h2 {
 }
 
 @media (max-width: 56.25em) {
-    .nav__list {
+    .home__nav {
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -125,16 +125,22 @@ h2 {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 80%;
         text-align: center;
         font-size: 2.5em;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-out;
+        z-index: 1;
     }
+}
+
+.nav__list {
+    list-style: none;
 }
 
 @media (min-width: 56.25em) {
     .nav__list {
-        list-style: none;
         display: flex;
         flex-direction: row;
     }
@@ -167,23 +173,16 @@ h2 {
     top: 1px;
 }
 
-.site-nav-open {
+@media (max-width: 56.25em) {
+    .site-nav-open {
     overflow: hidden;
+    }
 }
 
 @media (max-width: 56.25em) {
     .site-nav-open .home__nav {
-        display: block;
-    }
-}
-
-.site-nav-close {
-    overflow: visible;
-}
-
-@media (max-width: 56.25em) {
-    .site-nav-close .home__nav {
-        display: none;
+        visibility: visible;
+        transform: translateX(0);
     }
 }
 
