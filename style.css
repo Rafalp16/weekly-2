@@ -327,7 +327,7 @@ h2 {
 @media (min-width: 56.25em) {
     .gallery__description {
         width: 30em;
-        margin: 0 auto;
+        margin: 0 auto 1em;
     }
 }
 
@@ -339,16 +339,40 @@ h2 {
     justify-content: space-around;
 }
 
+@media(min-width: 56.25em) {
+    .gallery__list {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 60em;
+    }
+}
+
 .gallery__image {
     width: 100%;
 }
 
 .item--big {
-    flex-basis: 95%;
+    flex-basis: 100%;
+}
+
+@media(min-width: 56.25em) {
+    .item--big {
+        flex-basis: 66%;
+    }
+}
+
+.item--medium {
+    flex-basis: 100%;
+}
+
+@media(min-width: 56.25em) {
+    .item--medium {
+        flex-basis: 32.3%;
+    }
 }
 
 .item--small {
-    flex-basis: 45%;
+    flex-basis: 49.5%;
 }
 
 .subscribe {
