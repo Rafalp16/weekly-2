@@ -11,12 +11,23 @@ navLinks.forEach(function(navLink) {
 });
 
 let scrollTop;
-let offsetAbout, offsetServices, offsetGallery, offsetBlog, offsetContact;
+/*
+let offsets = [];
+let heights = [];
+let sections = ["home", "about", "services", "gallery", "blog", "contact"];
+*/
+let offsetHome, offsetAbout, offsetServices, offsetGallery, offsetBlog, offsetContact;
 let heightHome, heightAbout, heightServices, heightGallery, heightBlog, heightContact;
 let navHeight = 65;
 
 function updateScroll () {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    /*
+    for(let i = 0; i < sections.length; i++) {
+        offsets[i] = document.getElementById(sections[i]).offsetTop;
+        heights[i] = document.getElementById(sections[i]).scrollHeight;
+    }
+    */
     heightHome = document.getElementById("home").scrollHeight;
     offsetAbout = document.getElementById("about").offsetTop;
     heightAbout = document.getElementById("about").scrollHeight;
